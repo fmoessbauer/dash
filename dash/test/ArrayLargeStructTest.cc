@@ -11,6 +11,7 @@ TEST_F(ArrayLargeStruct, LocalArrayTest)
   size_t array_size = _dash_size;
   // Create array instances using varying constructor options
   LOG_MESSAGE("Array size: %d", array_size);
+  LOG_MESSAGE("Size of single element: %d MB", sizeof(DGNode) / MEGABYTE );
   // Initialize arrays
   LOG_MESSAGE("Initialize arr1");
   dash::Array<DGNode> arr1(array_size);
@@ -34,8 +35,8 @@ TEST_F(ArrayLargeStruct, LocalArrayTest)
     delete write;
     delete read;
   }
-
   // Units waiting for value initialization
   arr1.barrier();
+  LOG_MESSAGE("Finished");
 }
 

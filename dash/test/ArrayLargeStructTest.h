@@ -9,6 +9,8 @@
 #define FEAT_MAX_LEN 10000000
 #define MAX_LEN 15
 
+#define MEGABYTE (1 << 20)
+
 typedef struct DGNode_s {
   int len;
   double val[FEAT_MAX_LEN];
