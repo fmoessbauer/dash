@@ -13,7 +13,7 @@ markdown_extensions:
         permalink: True
     - admonition:
     - extra:
-    - mathjax:
+    - math:
 
 theme: readthedocs
 
