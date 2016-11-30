@@ -10,7 +10,6 @@ extra_javascript:
 
 markdown_extensions:
     - toc:
-    - mdx_math:
     - admonition:
 
 theme: readthedocs
