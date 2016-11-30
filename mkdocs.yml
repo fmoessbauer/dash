@@ -10,7 +10,10 @@ extra_javascript:
 
 markdown_extensions:
     - toc:
+        permalink: True
     - admonition:
+    - extra:
+    - mathjax:
 
 theme: readthedocs
 
