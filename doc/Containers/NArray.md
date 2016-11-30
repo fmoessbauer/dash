@@ -55,8 +55,8 @@ with.
 For two-dimensional arrays this linearization can either happen row by row (aka. rowmajor
 storage) or column by column (aka. column-major storage). For arbitrary dimensions these
 definitions can be suitably extended and row-major then means that elements
-$(i, j,..., n)$ and $(i, j,..., n + 1)$ are stored next to each other, while in the case of
-columnmajor storage $(i, j,..., n)$ and $(i + 1, j, ...)$ are stored next to each other
+$$(i, j,..., n)$$ and $$(i, j,..., n + 1)$$ are stored next to each other, while in the case of
+columnmajor storage $$(i, j,..., n)$$ and $$(i + 1, j, ...)$$ are stored next to each other
 (not taking into account any possible data distribution among multiple units).
 
 Fig. 1 visualizes the layout of elements in a two-dimensional `dash::NArray`, both with
