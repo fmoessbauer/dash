@@ -7,6 +7,7 @@ repo_url: https://github.com/dash-project/dash/
 
 extra_javascript: 
     - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    - config/mathjaxhelper.js
 
 markdown_extensions:
     - toc:
