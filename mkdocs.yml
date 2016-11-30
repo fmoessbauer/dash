@@ -16,3 +16,10 @@ markdown_extensions:
     - extra:
 
 theme: readthedocs
+
+pages:
+  - Home: index.md
+  - Container:
+    - NArray: Containers/NArray.md
+  - Input Output: InputOutput/HDF5.md
+  - CI: CI.md
