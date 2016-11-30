@@ -5,18 +5,6 @@ site_author: DASH-Team
 
 repo_url: https://github.com/dash-project/dash/
 
-pages:
-- Home: index.md
-- Container: containers.md
-    - Static Container: Containers/static-containers.md
-    - Dynamic Container: Containers/dynamic-containers.md
-- Global Iterator Concept: iterator-concept.md
-- Pattern Concept: pattern-concept.md
-- IO Concpet: io-concept.md
-    - HDF5 Driver: InputOutput/HDF5.md
-- Algorithms: algorithms.md
-- Utilities: utilities.md
-
 extra_javascript: 
     - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
