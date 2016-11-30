@@ -103,7 +103,8 @@ docker build --tag dashproject/ci-testing:<env> dash/scripts/docker-testing/<env
 docker pull dashproject/ci-testing:<env>
 ```
 
-!!! Note These containers can also be used as a good starting point for developing DASH applications.
+!!! note "Note:"
+    These containers can also be used as a good starting point for developing DASH applications.
 
 As the containers only provide an environment but no DASH installation, a DASH repository should be mounted as shared folder.
 The following command starts an interactive container with DASH located in /opt/dash, assumed that the command is at the top level of the DASH repository.
@@ -160,7 +161,8 @@ After the completion of each Docker container, the test results are gathered and
 #### Debugging
 CircleCI supports direct debugging inside the CI container / VM. Therfor click on the `Debug via SSH` button on a running build and ssh into the desired container. As we use Docker inside CircleCI to run our tests, all pathes printed in the CI output refer to internal pathes inside the Docker container.
 
-!!! Note Attaching to a running container is problematic, as the containers are not run in interactive mode. Hence your terminal might hang.
+!!! note "Note:"
+    Attaching to a running container is problematic, as the containers are not run in interactive mode. Hence your terminal might hang.
 
 The best way to debug is to spin up a interactive container using the corresponding environment. For example, if a problem occured in env `openmpi2` use the following command to start the container. As the current working directory is mounted to `/opt/dash`, run the command inside the DASH repository folder.
 
@@ -172,4 +174,5 @@ Inside the container, `cd` to `/opt/dash` and execute `/bin/bash /opt/dash/scrip
 
 To leave the container again, just type `exit`.
 
-!!! Note Your SSH access is automatically terminated after 30 minutes.
+!!! note "Note:"
+    Your SSH access is automatically terminated after 30 minutes.
